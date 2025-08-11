@@ -4,7 +4,7 @@ import navLogo from "../../assets/nav-logo3.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-4 ">
+    <nav className="flex justify-between items-center py-2 shadow shadow-lime-50 px-8 sticky top-0   z-50">
       <div>
         <figure>
           <img
@@ -26,7 +26,7 @@ const Navbar = () => {
             <NavMenu level={"About"} address={"/#about"}></NavMenu>
           </li>
           <li>
-            <NavMenu level={"Skills"} address={"/#skills"}></NavMenu>
+            <NavMenu level={"Skills"} address={"/#skills"} />
           </li>
           <li>
             <NavMenu level={"Project"} address={"/#project"}></NavMenu>

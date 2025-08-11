@@ -1,17 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router";
+import { HashLink } from "react-router-hash-link";
 
-const NavMenu = ({level , address}) => {
+const NavMenu = ({ level, address }) => {
   return (
     <div>
-      <NavLink
+      <HashLink
+        smooth
         to={address}
-        className={"hover:text-lime-300 text-xs transition-all transform duration-100 hover:underline hover:text-sm"}
+        className="hover:text-lime-300 text-xs transition-all transform duration-100 hover:underline hover:text-sm"
       >
-       {level}
-      </NavLink>
+        {level}
+      </HashLink>
     </div>
   );
 };
+
 
 export default NavMenu;
