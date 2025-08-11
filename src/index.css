@@ -1,2 +1,61 @@
 @import "tailwindcss";
 @plugin "daisyui";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.font_bedas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+
+body{
+  color: white;
+  background-color: #000000;
+
+}
+
+.shine-text {
+  position: relative;
+  display: inline-block;
+}
+
+.shine-text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  animation: shine 2s ease-in-out infinite;
+}
+
+@keyframes shine {
+0% {
+    left: -75%;
+    opacity: 0; /* surute ekdom transparent */
+  }
+  10% {
+    left: -60%;
+    opacity: 0.1; /* aste aste dekha jabe */
+  }
+  25% {
+    opacity: 0.3;
+  }
+  50% {
+    left: 50%;
+    opacity: 0.3;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    left: 125%;
+    opacity: 0;
+  }
+}
