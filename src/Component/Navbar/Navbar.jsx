@@ -4,7 +4,7 @@ import navLogo from "../../assets/nav-logo3.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-2 shadow shadow-lime-50 px-8 sticky top-0   z-50">
+    <nav className="flex justify-between items-center py-2 shadow shadow-lime-50  sticky top-0 px-4 md:px-12 lg:px-16 xl:px-24   z-50">
       <div>
         <figure>
           <img
@@ -18,7 +18,7 @@ const Navbar = () => {
         </figure>
       </div>
       <div>
-        <ul className="flex gap-8">
+        <ul className=" hidden md:flex gap-8">
           <li>
             <NavMenu level={"Home"} address={"/"}></NavMenu>
           </li>

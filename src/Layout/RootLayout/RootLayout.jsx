@@ -1,3 +1,4 @@
+import Footer from '../../Component/Footer/Footer';
 import Home from '../../Component/Home/Home';
 import Navbar from '../../Component/Navbar/Navbar';
 import Skills from '../../Component/Skill/Skills';
@@ -12,7 +13,7 @@ const RootLayout = () => {
             <About></About>
             <section id='skills' ><Skills></Skills></section>
            </div>
-            
+            <Footer></Footer>
         </div>
     );
 };

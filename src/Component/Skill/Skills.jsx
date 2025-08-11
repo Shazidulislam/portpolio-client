@@ -1,6 +1,6 @@
 import React from "react";
 import Marquee from "react-fast-marquee";
-import { FaFigma, FaHtml5 } from "react-icons/fa";
+import { FaFigma } from "react-icons/fa";
 import {
   SiCss3,
   SiDaisyui,
@@ -13,11 +13,11 @@ import SkillCard from "../Card/SkillCard";
 import { RiReactjsFill } from "react-icons/ri";
 import { TbBrandNodejs } from "react-icons/tb";
 import { VscVscode } from "react-icons/vsc";
-import { ImNpm } from "react-icons/im";
+import { ImHtmlFive2, ImNpm } from "react-icons/im";
 
 const Skills = () => {
   const myskills = [
-    { id: 1, title: "HTML5", icon: FaHtml5 },
+    { id: 1, title: "HTML5", icon: ImHtmlFive2  },
     { id: 2, title: "CSS3", icon: SiCss3 },
     { id: 3, title: "Tailwind CSS", icon: SiTailwindcss },
     { id: 4, title: "DaisyUI", icon: SiDaisyui },
@@ -38,12 +38,12 @@ const Skills = () => {
       <h2 className='text-3xl font-semibold md:text-4xl text-center font_bedas shadow  py-1' >Skills <span className='text-lime-300 italic' >&&</span> Tools</h2>
      
       <div className="min-h-screen pt-24 space-y-12">
-        <Marquee pauseOnHover={true} gradient={false}>
+        <Marquee direction="right" pauseOnHover={true} gradient={false}>
           {myskills?.map((skill) => {
             return <SkillCard skill={skill} key={skill?.id}></SkillCard>;
           })}
         </Marquee>
-        <Marquee direction="right" pauseOnHover={true} gradient={false}>
+        <Marquee  pauseOnHover={true} gradient={false}>
           {myskills?.map((skill) => {
             return <SkillCard skill={skill} key={skill?.id}></SkillCard>;
           })}
