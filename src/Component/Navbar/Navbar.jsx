@@ -20,7 +20,7 @@ const Navbar = () => {
       <div>
         <ul className=" hidden md:flex gap-8">
           <li>
-            <NavMenu level={"Home"} address={"/"}></NavMenu>
+            <NavMenu level={"Home"} address={"/#home"}></NavMenu>
           </li>
           <li>
             <NavMenu level={"About"} address={"/#about"}></NavMenu>

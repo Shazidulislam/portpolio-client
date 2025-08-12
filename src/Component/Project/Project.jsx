@@ -16,7 +16,7 @@ const Project = () => {
         server:
           "https://github.com/Programming-Hero-Web-Course4/b11a12-server-side-Shazidulislam",
       },
-      projectImages: img1,
+      projectImages: img2,
       projectFeatured: {
         "Comprehensive Home Page":
           "Clean, user-friendly homepage with quick district/upazila search, urgent requests, featured donors, and CTAs, built with React.js, React DOM, and styled using Tailwind CSS.",
@@ -60,7 +60,7 @@ const Project = () => {
         server:
           "https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-Shazidulislam",
       },
-      projectImages: img2,
+      projectImages: img1,
       projectFeatured: {
         "User-Friendly Navigation":
           "Easy-to-use menu and navigation bar for quick access to all pages and functions.",

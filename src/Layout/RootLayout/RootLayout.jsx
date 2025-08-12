@@ -11,8 +11,8 @@ const RootLayout = () => {
         <div className='min-h-screen  ' >
             <Navbar></Navbar>
            <div className='px-4 md:px-12 lg:px-16 2xl:px-24 mx-auto'>
-             <Home></Home>
-            <About></About>
+            <section id='home'> <Home></Home></section>
+            <section id="about"><About></About></section>
             <section id='skills' ><Skills></Skills></section>
             <section id='project' ><Project></Project></section>
            </div>

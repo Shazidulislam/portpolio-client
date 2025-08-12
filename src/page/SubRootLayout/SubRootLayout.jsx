@@ -5,9 +5,11 @@ import Footer from '../../Component/Footer/Footer';
 
 const SubRootLayout = () => {
     return (
-        <div>
+        <div className='' >
             <Navbar></Navbar>
-            <Outlet></Outlet>
+            <div className=''>
+               <Outlet></Outlet>  
+            </div>
             <Footer></Footer>
         </div>
     );

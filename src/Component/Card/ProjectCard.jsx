@@ -10,7 +10,7 @@ const ProjectCard = ({ data }) => {
   const { projectName, description, links, projectImages, id } = data;
 
   const frist50Words = description.split(" ").slice(0, 50).join(" ");
-
+  console.log(setShowtext)
   if (!data) return <Loading />;
   return (
     <div className=" shadow shadow-lime-100 rounded-2xl mb-10   px-4 py-6 grid grid-cols-12 gap-4">
@@ -24,9 +24,9 @@ const ProjectCard = ({ data }) => {
       <div className=" col-span-12 md:col-span-7">
         <h1 className="text-3xl font-semibold text-lime-300">{projectName}</h1>
         <p className="text-sm">
-          {showtext ? description : frist50Words + "...."}
+          {showtext ? description : frist50Words + "....."}
         </p>
-        <div className="pt-6 flex justify-start items-center gap-4">
+        <div className="pt-5 flex justify-start items-center gap-4">
           <Link
             target="_blank"
             className="px-8 py-3 shadow shadow-lime-400  flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
@@ -49,7 +49,7 @@ const ProjectCard = ({ data }) => {
             Server
           </Link>
         </div>
-        <div className="pt-16">
+        <div className="pt-14">
           <Link
             onMouseEnter={() => {
               setTimeout(() => {
