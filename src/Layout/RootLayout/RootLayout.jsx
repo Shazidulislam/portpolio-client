@@ -5,6 +5,7 @@ import Navbar from '../../Component/Navbar/Navbar';
 import Project from '../../Component/Project/Project';
 import Skills from '../../Component/Skill/Skills';
 import About from '../../page/About/About';
+import Contact from '../../Component/Contact/Contact';
 
 const RootLayout = () => {
     return (
@@ -15,6 +16,7 @@ const RootLayout = () => {
             <section id="about"><About></About></section>
             <section id='skills' ><Skills></Skills></section>
             <section id='project' ><Project></Project></section>
+            <section><Contact></Contact></section>
            </div>
            <section id="contact"><Footer></Footer></section>
         </div>

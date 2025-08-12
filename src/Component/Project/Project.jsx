@@ -37,16 +37,18 @@ const Project = () => {
       },
       technologies: [
         "React.js",
+        
         "React Router",
         "React Query",
         "Axios",
         "SweetAlert",
-        "Firebase Authentication",
+        "Firebase ",
         "React DOM",
         "Node.js",
         "Express.js",
         "MongoDB",
-        "Tailwind CSS",
+         "Tailwind CSS",
+       
       ],
     },
     {
@@ -88,14 +90,14 @@ const Project = () => {
       technologies: [
         "React.js",
         "React Router",
-        "React Query",
+         "MongoDB",
         "Axios",
         "SweetAlert",
-        "Firebase Authentication",
+        "Firebase ",
         "React DOM",
         "Node.js",
         "Express.js",
-        "MongoDB",
+         "React Query",
         "Tailwind CSS",
       ],
     },

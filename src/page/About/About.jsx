@@ -68,7 +68,7 @@ const About = () => {
           {/* skills */}
           <div className="pt-8">
             <h2 className="text-2xl">TECHNICAL SKILLS</h2>
-            <li className="">Frontend: Js, React, Tailwind CSS, Material ui</li>
+            <li className="">Frontend: Js, React, Tailwind CSS</li>
             <li className="">Backend: Node.js, Express.js</li>
             <li className="">Database: MongoDB</li>
             <li className="">Tools: Git, GitHub, Vercel, Netlify, Surge</li>

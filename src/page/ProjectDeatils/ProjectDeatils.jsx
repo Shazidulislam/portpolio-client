@@ -3,6 +3,7 @@ import { Link, useParams } from "react-router";
 import img1 from "../../assets/project.png";
 import img2 from "../../assets/Screenshot (38).png";
 import Loading from "../../Component/Loading/Loading";
+import { PiArrowLeftThin } from "react-icons/pi";
 
 const ProjectDeatils = () => {
   const [singleData, setSingledata] = useState();
@@ -115,8 +116,8 @@ const ProjectDeatils = () => {
         </div>
       </div>
       {/* link */}
-      <h1 className="pt-10 text-3xl font-medium">Project Research</h1>
-      <div className="pt-2 flex justify-start items-center gap-4">
+      <h1 className="pt-10 text-3xl font-medium">Project Resources</h1>
+      <div className="pt-2 grid grid-cols-2 md:flex justify-start items-center gap-4">
         <Link
           target="_blank"
           className="px-8 py-3 shadow shadow-lime-400  flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
@@ -138,6 +139,9 @@ const ProjectDeatils = () => {
         >
           Server
         </Link>
+      </div>
+      <div className="text-center pt-3 flex justify-center items-center">
+        <Link to="/" className="px-6 py-3  shadow shadow-lime-300 flex justify-center items-center gap-2"> <PiArrowLeftThin size={24}/><span>Back Home</span></Link>
       </div>
     </div>
   );
