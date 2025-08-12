@@ -4,7 +4,7 @@ import navLogo from "../../assets/nav-logo3.png";
 
 const Navbar = () => {
   return (
-    <nav className="flex justify-between items-center py-2 shadow shadow-lime-50  sticky top-0 px-4 md:px-12 lg:px-16 xl:px-24   z-50">
+    <nav className="flex justify-between items-center py-2 shadow shadow-lime-50  sticky top-0 px-4 md:px-12 lg:px-16 2xl:px-24   z-50">
       <div>
         <figure>
           <img

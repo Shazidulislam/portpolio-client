@@ -8,7 +8,7 @@ import { Link } from "react-router";
 
 const Footer = () => {
   return (
-    <div className="min-h-[400px] px-4 grid  md:grid-cols-2 lg:grid-cols-4 pt-20 md:px-12 lg:px-16 xl:px-24  border-t-2 border-lime-200">
+    <div className="min-h-[400px] px-4 grid  md:grid-cols-2 lg:grid-cols-4 pt-20 md:px-12 lg:px-16 2xl:px-24  border-t-2 border-lime-200">
       {/* logo */}
       <div >
         <figure className="w-32">
@@ -36,7 +36,10 @@ const Footer = () => {
           </span>
           <span className="flex justify-start gap-2">
             <FaWhatsappSquare size={24} />
-            <p>+8801605199098</p>
+            <Link target="_blank" to="https://wa.me/8801605199098?text=Hi%20I%20am%20Shazid%0AI%20am%20a%20passionate%20web%20developer" >
+              <p className="hover:text-lime-300" >+8801605199098</p>
+            </Link>
+            
           </span>
         </ul>
       </div>
