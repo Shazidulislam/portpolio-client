@@ -20,7 +20,8 @@ const ProjectDeatils = () => {
           "https://github.com/Programming-Hero-Web-Course4/b11a12-server-side-Shazidulislam",
       },
       projectImages: img2,
-      projectFeatured:"The project offers a comprehensive and user-friendly homepage designed with React.js, React DOM, and Tailwind CSS, featuring quick district/upazila search, urgent requests, featured donors, and clear call-to-action buttons. An engaging banner section showcases a bold slider with multiple slides promoting blood drives and core features, providing smooth visuals styled with Tailwind CSS. The diverse donors section displays donor cards in a clean grid layout, showing details like alias, blood group, and location, with data dynamically fetched via Axios from MongoDB.The seamless “Register as Donor” page is a protected form with input validation, Firebase authentication, and route protection using React Router, along with SweetAlert notifications. Submitted data is handled through Axios and stored in MongoDB via a Node.js and Express.js backend. The accessible “All Donors” page provides a searchable and filterable donor list, with data efficiently managed and cached using React Query and Axios.For a more personalized experience, users have private detail pages secured with React Router and JWT authentication, where data is fetched and cached using React Query for a smooth browsing experience. The customizable “My Requests” and “Profile” pages allow users to manage their information through a React.js interface connected to MongoDB. Additionally, a fun donation system is available, offering optional micro-donations with secure payment processing handled by a Node.js and Express.js backend, Axios API calls, and a responsive React.js + Tailwind CSS front end.",
+      projectFeatured:
+        "The project offers a comprehensive and user-friendly homepage designed with React.js, React DOM, and Tailwind CSS, featuring quick district/upazila search, urgent requests, featured donors, and clear call-to-action buttons. An engaging banner section showcases a bold slider with multiple slides promoting blood drives and core features, providing smooth visuals styled with Tailwind CSS. The diverse donors section displays donor cards in a clean grid layout, showing details like alias, blood group, and location, with data dynamically fetched via Axios from MongoDB.The seamless “Register as Donor” page is a protected form with input validation, Firebase authentication, and route protection using React Router, along with SweetAlert notifications. Submitted data is handled through Axios and stored in MongoDB via a Node.js and Express.js backend. The accessible “All Donors” page provides a searchable and filterable donor list, with data efficiently managed and cached using React Query and Axios.For a more personalized experience, users have private detail pages secured with React Router and JWT authentication, where data is fetched and cached using React Query for a smooth browsing experience. The customizable “My Requests” and “Profile” pages allow users to manage their information through a React.js interface connected to MongoDB. Additionally, a fun donation system is available, offering optional micro-donations with secure payment processing handled by a Node.js and Express.js backend, Axios API calls, and a responsive React.js + Tailwind CSS front end.",
       technologies: [
         "React.js",
         "React Router",
@@ -47,7 +48,8 @@ const ProjectDeatils = () => {
           "https://github.com/Programming-Hero-Web-Course4/b11a11-server-side-Shazidulislam",
       },
       projectImages: img1,
-      projectFeatured:"This Marathon Management System offers a smooth and user-friendly experience with an easy-to-use menu and navigation bar for quick access to all features. Users can browse and search upcoming marathons, filtering by date, location, and category, and register quickly through a streamlined and secure process. Authorized users can add new marathons with detailed information such as name, date, venue, category, and description. Each user gets a personalized dashboard to track registrations, update profiles, and manage their participation history. The platform ensures secure authentication using Firebase Authentication and protects sensitive pages with private and admin routes via React Router. Real-time data handling is powered by React Query for fast, seamless updates, while CRUD operations allow creating, updating, and deleting events or registrations with confirmation alerts using SweetAlert. Designed with Tailwind CSS for a fully responsive, mobile-first interface, the backend is built on Node.js and Express.js with MongoDB for reliable data storage.",
+      projectFeatured:
+        "This Marathon Management System offers a smooth and user-friendly experience with an easy-to-use menu and navigation bar for quick access to all features. Users can browse and search upcoming marathons, filtering by date, location, and category, and register quickly through a streamlined and secure process. Authorized users can add new marathons with detailed information such as name, date, venue, category, and description. Each user gets a personalized dashboard to track registrations, update profiles, and manage their participation history. The platform ensures secure authentication using Firebase Authentication and protects sensitive pages with private and admin routes via React Router. Real-time data handling is powered by React Query for fast, seamless updates, while CRUD operations allow creating, updating, and deleting events or registrations with confirmation alerts using SweetAlert. Designed with Tailwind CSS for a fully responsive, mobile-first interface, the backend is built on Node.js and Express.js with MongoDB for reliable data storage.",
       technologies: [
         "React.js",
         "React Router",
@@ -87,54 +89,56 @@ const ProjectDeatils = () => {
         {singleData?.projectName}
       </p>
       <p>
-        <span className="font-semibold" >Description : </span>
-        <span className="font-thin text-sm" >{singleData?.description}</span>
+        <span className="font-semibold">Description : </span>
+        <span className="font-thin text-sm">{singleData?.description}</span>
       </p>
       <div>
         <p className="text-2xl font-semibold pt-10">Project Highlights</p>
         <div>
-            <p className="text-sm" >{singleData?.projectFeatured}</p>
+          <p className="text-sm">{singleData?.projectFeatured}</p>
         </div>
-
       </div>
       {/* Technologies Used */}
       <div>
-        <h2 className="text-2xl font-medium pt-10 pb-4" >Technologies Used</h2>
-        <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8" >
-            {
-                singleData?.technologies?.map((info,i )=>{
-                    return(
-                        <div key={i} className=" rounded text-center hover:shadow-2xl px-6 md:px-8 py-3 shadow shadow-lime-200" >{info}</div>
-                    )
-                })
-            }
+        <h2 className="text-2xl font-medium pt-10 pb-4">Technologies Used</h2>
+        <div className="grid gap-4 grid-cols-2 md:grid-cols-4 lg:grid-cols-6 2xl:grid-cols-8">
+          {singleData?.technologies?.map((info, i) => {
+            return (
+              <div
+                key={i}
+                className=" rounded text-center hover:shadow-2xl px-6 md:px-8 py-3 shadow shadow-lime-200"
+              >
+                {info}
+              </div>
+            );
+          })}
         </div>
       </div>
       {/* link */}
-       <h1 className="pt-10 text-3xl font-medium" >Project Research</h1>
+      <h1 className="pt-10 text-3xl font-medium">Project Research</h1>
       <div className="pt-2 flex justify-start items-center gap-4">
-          <Link
-            target="_blank"
-            className="px-8 py-3 shadow shadow-lime-400  flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
-            to={singleData?.live}
-          >
-            Live Site
-          </Link>
-          <Link
-            target="_blank"
-            className="px-8 py-3 shadow shadow-lime-400 flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
-            to={singleData?.client}
-          >
-            Client
-          </Link>
-          <Link
-            target="_blank"
-            className="px-8 py-3 shadow shadow-lime-400 flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
-            to={singleData?.server}
-          >
-            Server
-          </Link>
-        </div>
+        <Link
+          target="_blank"
+          className="px-8 py-3 shadow shadow-lime-400  flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
+          to={singleData?.live}
+        >
+          Live Site
+        </Link>
+        <Link
+          target="_blank"
+          className="px-8 py-3 shadow shadow-lime-400 flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
+          to={singleData?.client}
+        >
+          Client
+        </Link>
+        <Link
+          target="_blank"
+          className="px-8 py-3 shadow shadow-lime-400 flex justify-center items-center rounded  transition transform duration-300 hover:-translate-y-4"
+          to={singleData?.server}
+        >
+          Server
+        </Link>
+      </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const RootLayout = () => {
             <section id='skills' ><Skills></Skills></section>
             <section id='project' ><Project></Project></section>
            </div>
-            <Footer></Footer>
+           <section id="contact"><Footer></Footer></section>
         </div>
     );
 };

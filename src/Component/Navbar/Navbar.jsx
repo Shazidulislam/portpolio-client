@@ -1,6 +1,9 @@
 import React from "react";
 import NavMenu from "../NavMenu/NavMenu";
 import navLogo from "../../assets/nav-logo3.png";
+import { FaDownload } from "react-icons/fa";
+import { AiOutlineDownload } from "react-icons/ai";
+import { toast } from "react-toastify";
 
 const Navbar = () => {
   return (
@@ -37,7 +40,11 @@ const Navbar = () => {
         </ul>
       </div>
       <div>
-        <button className="px-6 py-2 shadow shadow-lime-50 bg-black/40 rounded cursor-pointer">Resumi</button>
+        <button onClick={()=>{
+            toast.info("My resume is currently being prepared and will be available soon")
+        }} className=" mt-6 px-6 py-2 shadow flex justify-start items-start transition duration-300 transform hover:-translate-y-3 shadow-lime-100 bg-black/40 rounded cursor-pointer gap-2">
+          <AiOutlineDownload  /> <span>Resume </span>
+        </button>
       </div>
     </nav>
   );
