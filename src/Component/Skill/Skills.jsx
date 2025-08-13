@@ -31,7 +31,6 @@ const Skills = () => {
     { id: 12, title: "NPM", icon: ImNpm },
   ];
 
-  console.log(myskills);
 
   return (
     <div>

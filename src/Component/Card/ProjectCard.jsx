@@ -9,7 +9,6 @@ const ProjectCard = ({ data }) => {
   const { projectName, description, links, projectImages, id , technologies } = data;
 
   const frist50Words = description.split(" ").slice(0, 50).join(" ");
-  console.log(setShowtext)
   if (!data) return <Loading />;
   return (
     <div className=" shadow shadow-lime-100 rounded-2xl mb-10   px-4 py-6 grid grid-cols-12 gap-4">
@@ -58,7 +57,7 @@ const ProjectCard = ({ data }) => {
         </div>
         <div className="pt-3">
           <Link
-            to={`/subRoot/project/${id}`}
+            to={ `/subRoot/project/${id}`}
             className={`px-6 py-3 shadow text-center shadow-lime-300 md:w-3/12 rounded cursor-pointer flex justify-start items-start gap-1 transition transform duration-500 `}
           >
             <span className="transition transform duration-300 flex gap-1"> <FaArrowRight size={24} />  Viwe Deatils</span>
